@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Pompiere&display=swap');
+/* 
+font-family: 'Bigelow Rules', cursive;
+font-family: 'Pompiere', cursive;
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    text-align: center;
+    font-family: 'Pompiere', cursive;
+    height: 100%;
+    background: #e0ecf5;
+    justify-content: center;
+}
+
+#logo {
+    width: 300px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "cliente pedido"
+        "pagamento pagamento "
+        "actions actions";
+}
+
+.card {
+    height: 100%;
+    width: 900px;
+    border-radius: 25px;
+    background: #e0ecf5;
+    box-shadow:
+        9px 9px 15px #bec9d0,
+        -9px -9px 15px #ffffff;
+    margin: 50px auto;
+    z-index: 2;
+}
+
+.cliente {
+    grid-area: cliente;
+}
+
+.pedido {
+    grid-area: pedido;
+    
+}
+
+.actions {
+    grid-area: actions;
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+    margin: 15px auto;
+}
+
+.pagamento {
+    grid-area: pagamento;
+    width: 800px;
+}
+
+input[type=date]{
+    width: 150px;
+}
+input[type=time]{
+    width: 100px;
+}
+
+label {
+    display: block;
+    border-radius: 5px;
+    font-size: larger;
+    text-align: left;
+    margin-left: 70px;
+}
+
+textarea {
+    width: 250px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    width: 10px;
+    margin-right: 5px;
+    height: fit-content;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+select {
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    border-style: none;
+    padding-left: 5px;
+    margin: 0 auto 15px;
+}
+
+.entrega label,
+.pagamento label,
+.agendamento {
+    display: inline-block;
+    margin: 5px;
+}
+
+.formaPagamento,
+.entrega {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin: auto;
+}
+
+.pedido {
+    height: fit-content;
+}
+.listasabores {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: -15px;
+}
+
+#quantpessoas{
+    display: none;
+}
+#bolo-camadas{
+    display: none;
+}
+#unidades{
+    display: none;
+}
+#quantsabores{
+    display: none;
+}
+
+button {
+    margin-top: 10px;
+    height: 30px;
+    width: 125px;
+    border-style: none;
+    border-radius: 25px;
+    background: #e0ecf5;
+    box-shadow:
+        5px 5px 10px #bec9d0,
+        -5px -5px 10px #ffffff;
+    margin: 50px auto;
+    z-index: 2;
+}
+
+fieldset {
+    width: 350px;
+    padding: 10px 0;
+    margin: 10px auto;
+    border: #92bcd6 1px solid;
+}
+
+fieldset legend {
+    padding: 0 10px;
+    font-size: x-large;
+}
