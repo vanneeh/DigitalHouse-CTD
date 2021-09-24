@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif; 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("https://www.spriomais.com.br/wp-content/uploads/2020/08/sao-jose-ponte-estaiada-claudio-vieira-pmsjc.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+    padding: 10px;
+}
+
+.container {
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 4%, rgba(0, 0, 0, 0.8) 15%, rgba(0, 0, 0, 0.8) 96%, rgba(0, 0, 0, 0) 100%);
+    width: 1000px;
+    height: auto;
+    margin: auto;
+}
+
+header,
+h1,
+h2,
+h3 {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    padding: 10px;
+    color: #89c2d9;
+}
+header{
+    padding: 20px 0px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    letter-spacing: 1px;
+}
+
+h3 {
+    padding-bottom: 10px;
+}
+
+h2+p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+span {
+    font-weight: bold;
+    color: #89c2d9;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #dddddd;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 8px;
+    width: 90%;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+iframe {
+    width: 90%;
+    height: 506px;
+    /* não coloquei a altura especificada nas instruções pois ficaria enorme na página e fora de proporção para a imagem do video */
+}
+
+img{
+  width: 60%;
+}
+
+p a{
+    color: #89c2d9;
+    text-decoration: none;
+}
+.center {
+    text-align: center;
+}
+
+.contact-details {
+    display: inline-block;
+    font-weight: bold;
+    list-style-type: none;
+    color: #89c2d9;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.contact-details:hover {
+    color: #f4d35e;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    height: 150px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 30px;
+}
