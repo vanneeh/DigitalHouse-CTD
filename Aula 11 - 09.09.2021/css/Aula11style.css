@@ -11,13 +11,21 @@ font-family: 'Shadows Into Light', cursive;
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
+    display: flex;
     position: sticky;
     top: 0;
     background-color: black;
     color: white;
     font-family: 'Shadows Into Light', cursive;
-    height: 50px;
+    height: 70px;
+    align-items: center;
+    padding-left: 15px;
 }
 
 #banner {
@@ -26,7 +34,6 @@ header {
     text-align: center;
     padding: 500px 35px;
 }
-
 footer {
     position: sticky;
     bottom: 0;
@@ -37,22 +44,22 @@ footer {
     top: 15px;
 }
 
-.whatsapp {
-    position: fixed;
-    width: 50px;
-    bottom: 20px;
-    width: 20px;
-}
-
-.whatsapp img {
-    width: 100%;
-}
-
 img {
     width: 100px;
     position: absolute;
 }
 
-.algo {
-    z-index: 1;
+.text-banner {
+    width: 700px;
+    height: 150px;
+    padding: 15px;
+    text-align: justify;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.text-banner h2 {
+    text-align: center;
+    font-family: 'Marvel', sans-serif;
+    font-size: 40px;
 }
