@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Fredericka+the+Great|Open+Sans+Condensed:300');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(https://i.redd.it/4aq4jw0ggln51.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+    padding: 30px;
+}
+
+img {
+    width: 705px;
+    margin: 30px;
+    
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    padding: 15px, 0px;
+}
+
+h1,
+h2,
+h3 {
+    padding: 5px;
+    text-align: center;
+    color: #5f98b1;
+}
+
+h1 {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 80px;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Amatic SC';
+    font-size: 35px;
+    letter-spacing: 1px;
+
+}
+
+h3 {
+    font-family: 'Amatic SC';
+    font-size: 40px;
+    margin: -10px
+}
+
+p {
+    margin: 10px;
+    text-align: justify;
+    width: 600px;
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    margin: auto;
+}
+
+
+span {
+    font-weight: bold;
+}
+
+iframe {
+    margin: 10px;
+}
+
+.center{
+    text-align: center;
+}
+
+footer, a
+{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 15px;
+    color: #bdbdbd;
+    text-align: center;
+    margin-top:20px;
+}

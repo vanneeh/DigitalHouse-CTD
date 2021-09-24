@@ -1,0 +1,26 @@
+* {
+    background-color: #20272F;
+}
+
+h1 {
+    color: #db4437;
+
+}
+
+p {
+    color: #B01455;
+    font-size: larger;
+}
+
+li {
+    color: #0f9d58;
+    font-size: x-large;
+}
+
+.outros+p {
+    color: #9C27B0;
+}
+
+.outros~p {
+    color: #2196F3;
+}

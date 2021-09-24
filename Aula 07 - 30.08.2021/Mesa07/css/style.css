@@ -1,0 +1,35 @@
+body {
+    background-color: RGB(223, 215, 185);
+    color: RGB(51, 51, 51);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    
+}
+
+h1 {
+    color: #0d1b97;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.job-title {
+    background-color: #1726ad;
+    color: #898dbe;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+#high {
+    color: RGB(13, 27, 151);
+}
+
+ul {
+    background-color: #333333;
+    color: RGB(223, 215, 185);
+    padding: 10px;
+}
