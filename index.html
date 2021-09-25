@@ -1,38 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Index aulas Front End CTD</title>
+    <link rel="stylesheet" href="./css/projeto04.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./js/projeto04.js"></script>
+    <title>Projeto Aula 14</title>
+
 </head>
+
 <body>
-   
-        
-   <main>
-       <section>
-    <h1>Aulas Front End I - CTD</h1>
-  <ul>
-    <li><a href="./1° Checkpoint/index.html">1° Checkpoint</a></li>
-    <li><a href="./2° Checkpoint/index.html">2° Checkpoint</a></li>
-    <li><a href="./Aula 06 - 26.08.2021/index.html">Aula 06</a></li>
-    <li><a href="./Aula 07 - 30.08.2021/Mesa07/index.html">Mesa 07</a></li>
-    <li><a href="./Aula 08 - 31.08.2021/index.html">Aula 08</a></li>
-    <li><a href="./Aula 09 - 02.09.2021/index.html">Aula 09</a></li>
-    <li><a href="./Aula 11 - 09.09.2021/index.html">Aula 11</a></li>
-    <li><a href="./Aula 13 - 13.09.2021/index.html">Aula 13</a></li>
-    <li><a href="./Aula 16 - 16.09.2021/Mesa/index.html">Aula 16</a></li>
-    <li><a href="./Aula 18- 21.09.2021/index.html">Aula 18</a></li>
-    <li><a href="./Aula 18- 21.09.2021/mesa/index.html">Mesa 18</a></li>
-    <li><a href="./Aula 19 - 23.09.2021/index.html">Aula 19</a></li>
-</ul>
-       </section>
-       <section>
-           <h1>Meus Projetos</h1>
-       <li><a href="./Projetos/01/index.html">Projeto 01</a></li>
-       <li><a href="./Projetos/02/index.html">Projeto 02</a></li>
-       </section>
-</main>
+    <div class="card">
+        <header>
+            <img src="./img/LOGO VANNE BRANCO.png" alt="logomarca" id="logo">
+            <h2>Doces Perfeitos</h2>
+        </header><br>
+        <main>
+            <form action="#" method="POST">
+
+
+                <fieldset class="cliente">
+                    <legend>Cliente</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                    <label for="nome">Contato:</label>
+                    <input type="text" name="tel" id="tel" placeholder="(99) 99999-9999" minlength="10" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="insira seu email">
+                    <label for="end">Endereço:</label>
+                    <textarea name="end" id="end" cols="30" rows="3"></textarea>
+                </fieldset>
+
+                <div class="container-pedido">
+                    <fieldset class="pedido">
+                        <legend>Sua encomenda:</legend>
+                        <select name="encomenda" id="encomenda" onchange="show()">
+                            <option value="0" selected disabled>Escolha sua encomenda:</option>
+                            <option value="1">Bolo</option>
+                            <option value="2">Brigadeiro</option>
+                            <option value="3">Cupcake</option>
+                            <option value="4">Mini Torta</option>
+                            <option value="5">Mini Fudge</option>
+                            <option value="6">Mini Brownie</option>
+                        </select>
+
+                        <select name="encomenda" id="quantpessoas">
+                            <option value="0" selected disabled>Para quantas pessoas?</option>
+                            <option value="1">25</option>
+                            <option value="2">50</option>
+                            <option value="3">80</option>
+                            <option value="4">100</option>
+                        </select>
+                        <select name="encomenda" id="bolo-camadas">
+                            <option value="0" selected disabled>Quantas camadas de recheio?</option>
+                            <option value="1">1 camadas</option>
+                            <option value="2">2 camadas</option>
+                            <option value="3">3 camadas</option>
+                            <option value="4">4 camadas</option>
+                            <option value="5">5 camadas</option>
+                        </select>
+
+                        <select name="encomenda" id="unidades">
+                            <option value="0" selected disabled>Quantidade:</option>
+                            <option value="1">4</option>
+                            <option value="2">10</option>
+                            <option value="3">30</option>
+                            <option value="4">50</option>
+                            <option value="5">100</option>
+                        </select>
+                        <select name="encomenda" id="quantsabores">
+                            <option value="0" selected disabled>Quantos sabores?</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">4</option>
+                            <option value="4">6</option>
+                            <option value="5">8</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="pedido">
+                        <legend>Sabores:</legend>
+                        <div class="listasabores">
+                            <label><input type="checkbox" name="sabores" id="Ao leite"><span class="check"></span>Ao
+                                leite</label>
+                            <label><input type="checkbox" name="sabores" id="Morango"><span
+                                    class="check"></span>Morango</label>
+                            <label><input type="checkbox" name="sabores" id="Meio amargo"><span
+                                    class="check"></span>Meio amargo</label>
+                            <label><input type="checkbox" name="sabores" id="Branco"><span
+                                    class="check"></span>Branco</label>
+                            <label><input type="checkbox" name="sabores" id="Maracujá"><span
+                                    class="check"></span>Maracujá</label>
+                            <label><input type="checkbox" name="sabores" id="Limão"><span
+                                    class="check"></span>Limão</label>
+                            <label><input type="checkbox" name="sabores" id="Dois amores"><span
+                                    class="check"></span>Dois amores</label>
+                            <label><input type="checkbox" name="sabores" id="Napolitano"><span
+                                    class="check"></span>Napolitano</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <fieldset class="pagamento">
+                    <legend>Pagamento e entrega</legend>
+                    <label for="pagamento">Forma de Pagamento:</label>
+                    <div class="formaPagamento">
+                        <label for="dinheiro"><input type="radio" name="pagamento" id="dinheiro">Dinheiro</label>
+                        <label for="débito"><input type="radio" name="pagamento" id="débito">Débito</label>
+                        <label for="crédito"><input type="radio" name="pagamento" id="crédito">Crédito</label>
+                        <label for="pix"><input type="radio" name="pagamento" id="pix">Pix</label>
+                    </div>
+                    <label for="entrega">Forma de entrega:</label>
+                    <div class="entrega">
+                        <label><input type="radio" name="entrega" id="entrega">Entrega</label>
+                        <label><input type="radio" name="entrega" id="entrega">Retirada</label>
+                    </div>
+                    <label for="agendamento">Agendar pedido</label>
+                    <div class="agendamento">
+                        <input type="date" name="data" id="data" min="">
+                        <input type="time" name="tempo" id="tempo">
+                    </div>
+                </fieldset>
+                <!--                 <fieldset class="opcionais">
+                    <legend>Opcionais</legend>
+                    <div class="opcionais">
+                        <label for="Talher"><input type="checkbox" name="opcionais" id="Talher">Talher</label>
+                        <label for="Canudo"><input type="checkbox" name="opcionais" id="Canudo">Canudo</label>
+                        <label for="Guardanapo"><input type="checkbox" name="opcionais"
+                                id="Guardanapo">Guardanapo</label>
+
+                    </div>
+                </fieldset> -->
+                <div class="actions">
+                    <button type="reset">Cancelar</button>
+                    <button type="submit">Enviar pedido</button>
+                </div>
+            </form>
+        </main>
+    </div>
 </body>
+
 </html>
