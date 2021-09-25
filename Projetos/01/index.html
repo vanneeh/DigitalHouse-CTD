@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Wizard Survey</title>
+</head>
+
+<body class="background">
+
+    <h1 id="title">Wizard Survey</h1><!--  -->
+    <div class="containerpanel">
+        <div class="first-panel">
+            <form id="survey-form">
+                <header>
+                    <h2> The Wizarding Identity</h2>
+                    <p id="description">Who are you in the magical world? Share your truth with us!</p>
+                </header>
+                <main>
+                    <div class="form-group">
+                        <label id="name-label" for="name" class="label">Name:</label>
+                        <br>
+                        <input id="name" type="text" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="grid1">
+                        <div id="age" class="form-group">
+                            <label for="age" id="number" class="label">Age:</label><br>
+                            <input type="text" id="age" required class="form-control" placeholder="How old are you?">
+                        </div>
+                        <div id="gender-label">
+                            <label for="gender" class="label">Gender:</label></div>
+                        <div class="radio-group" name="gender">
+                            <label><input type="radio" name="gender" value="male">Male</label>
+                            <label><input type="radio" name="gender" value="female">Female</label>
+                            <label><input type="radio" name="gender" value="other">Other</label>
+                        </div>
+
+                        <div id="blood-label">
+                            <label for="blood" class="label">Blood type:</label></div>
+                        <div class="radio-group" name="blood">
+                            <label><input type="radio" name="blood" value="pure-blood">Pure-Blood</label>
+                            <label><input type="radio" name="blood" value="half-blood">Half-blood</label>
+                            <label><input type="radio" name="blood" value="muggle-born">Muggle-born</label>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label id="email-label" for="email" class="label">E-Address:</label><br>
+                        <input id="email" type="email" class="form-control" placeholder="Where can we send an e-owl?"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="selectYear" class="label">School Year:</label><br>
+                        <select name="selectYear" id="dropdown" class="form-control">
+                            <option value="0" label="Inform your school year" disabled selected hidden>Inform your
+                                school year</option>
+                            <option value="001" label="First Year">First Year</option>
+                            <option value="002" label="Second Year">Second Year</option>
+                            <option value="003" label="Third Year">Third Year</option>
+                            <option value="004" label="Fourth Year">Fourth Year</option>
+                            <option value="005" label="Fifth Year">Fifth Year</option>
+                            <option value="006" label="Sixth Year">Sixth Year</option>
+                            <option value="007" label="Seventh Year">Seventh Year</option>
+                            <option value="008" label="Graduated">Graduated</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="selectSchool">Wizarding School:</label><br>
+                        <select name="selectSchool" id="dropdown" class="form-control">
+                            <option value="0" label="Where do/did you study?" disabled selected hidden>Where do/did you
+                                study? </option>
+                            <option value="001" label="Hogwarts School of Witchcraft and Wizardry, Scotland">Hogwarts
+                                School of Witchcraft and Wizardry, Scotland</option>
+                            <option value="002" label="Beauxbatons Academy of Magic, France">Beauxbatons Academy of
+                                Magic, France</option>
+                            <option value="003" label="Castelobruxo, Brazil">Castelobruxo, Brazil</option>
+                            <option value="004" label="Durmstrang Institute, Sweden">Durmstrang Institute, Sweden
+                            </option>
+                            <option value="005" label="Ilvermorny School of Witchcraft and Wizardry, EUA">Ilvermorny
+                                School of Witchcraft and Wizardry, United States of America</option>
+                            <option value="006" label="Koldovstoretz, Russia">Koldovstoretz, Russia</option>
+                            <option value="007" label="Mahoutokoro School of Magic, Japan">Mahoutokoro School of Magic,
+                                Japan</option>
+                            <option value="008" label="Uagadou School of Magic, Uganda">Uagadou School of Magic, Uganda
+                            </option>
+                            <option value="009" label="None of the above">None of the above</option>
+                        </select>
+                    </div>
+                    <div class="grid2">
+                        <label id="ancestry" class="label">What is your ancestry?</label>
+                        <div class="check-group">
+                            <label><input type="checkbox" value="1">Human</label>
+                            <label><input type="checkbox" value="2">Goblin</label>
+                            <label><input type="checkbox" value="3">Giant</label>
+                            <label><input type="checkbox" value="4">Veela</label>
+                            <label><input type="checkbox" value="5">Vampire</label>
+                            <label><input type="checkbox" value="6">Dhampir</label>
+                            <label><input type="checkbox" value="7">Elf</label>
+                            <label><input type="checkbox" value="8">Troll</label>
+                        </div>
+                    </div>
+                    <div id="messageboard">
+                        <label for="textarea" class="label">Do want to share something interesting?</label><br>
+                        <textarea name="textarea" id="textarea" cols="30" rows="4" class="form-control"
+                            placeholder="Let us know more about you"></textarea>
+                    </div>
+            </form>
+        </div>
+        <!-- right panel-->
+        <div class="second-panel">
+            <form id="survey-form">
+                <!-- submit button-->
+                <button class="button" id="submit" type="submit">Submit</button>
+                <!-- end button -->
+            </form>
+        </div>
+    </div>
+    </main>
+</body>
+
+</html>

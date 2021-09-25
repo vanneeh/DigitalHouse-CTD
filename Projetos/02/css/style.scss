@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500|Roboto|Sofia');
+$ice: #f1f1f1;
+
+:root {
+  /* paleta de cores*/
+  --gray: #D6DBE0;
+  --lgray: #EFEDF9;
+  --soap: #BAAFD3;
+  --wblue: #99ABD1;
+  --sblue: #5E82A3;
+  --black: #000000;
+  --ice: #f1f1f1;
+}
+
+.backgroundimg {
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 1)),
+    url(https://www.teahub.io/photos/full/112-1121814_galaxy-background-best-galaxy-background-design.jpg);
+  background-size: cover;
+}
+
+body{
+  align-content: center;
+}
+.container {
+  display: grid;
+  width: 1065px;
+  grid-gap: 15px;
+  margin: 10px;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-areas:
+    'header header header'
+    'about about about'
+    'extlink extlink extlink'
+    'tacotar tacotar tacotar'
+    'coveracotar acotar acotar'
+    'ttog ttog ttog'
+    'tog tog covertog';
+}
+
+.blockhead {
+  grid-area: header;
+  background: var(--lgray);
+  margin: auto;
+  padding-top: 20px;
+  border: 5px dotted var(--black);
+  border-radius: 25px;
+}
+
+.authorimg {
+  display: block;
+  margin: auto;
+}
+
+#image {
+  max-width: 95%;
+  display: block;
+  height: auto;
+  border-radius: 40px;
+}
+
+.authorimg h1 {
+  font-family: 'Sofia', cursive;
+  font-size: 7em;
+  color: var(--sblue);
+  opacity: 0.95;
+  position: absolute;
+  padding-top: 345px;
+  padding-left: 300px;
+  text-shadow: 3.5px 3.5px 0 #000,
+    -2px -2px 0 #EFEDF9;
+}
+
+#author-caption {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.4em;
+  color: var(--sblue);
+  font-weight: bold;
+  margin-top: 45px;
+}
+
+.abouttheauthor {
+  grid-area: about;
+  margin: auto;
+  background: var(--wblue);
+  opacity: 0.9;
+  color: var(--black);
+}
+
+.content {
+  margin: 20px;
+  font-size: 18px;
+  font-family: Roboto;
+  text-align: justify;
+  letter-spacing: 1.5px;
+  word-spacing: 1.8px;
+}
+
+.extlink {
+  grid-area: extlink;
+  background: var(--soap);
+  height: 40px;
+  font-size: 10px;
+  line-height: 6px;
+  font-family: Roboto;
+  text-align: justify;
+
+}
+
+a:link {
+  color: var(--lightcolor);
+}
+
+a:visited {
+  color: var(--lightmiddlecolor);
+}
+
+.tacotar {
+  grid-area: tacotar;
+  height: 100px;
+  font-size: 50px;
+  font-family: Sofia;
+  text-align: right;
+  color: var(--ice);
+  text-shadow: 3.5px 3.5px var(--black);
+  padding-right: 30px;
+  line-height: 95px;
+  background: var(--sblue);
+}
+
+.acotarimg {
+  grid-area: coveracotar;
+  width: 350px;
+  height: 500px;
+  background-size: 450px;
+  background-position: center;
+  background-image: url(https://raw.githubusercontent.com/vanneeh/imgsCodePen/main/TributePage/acotarcover.jpg?token=AL4UVKG7QBM7X2MVNDJIWRTBGFEHU);
+}
+
+.acotarresume {
+  grid-area: acotar;
+  background: rgba(241, 241, 241, 0.8);
+}
+
+.ttog {
+  grid-area: ttog;
+  height: 100px;
+  font-size: 50px;
+  font-family: Sofia;
+  text-align: left;
+  color: var(--ice);
+  text-shadow: 3.5px 3.5px var(--black);
+  padding-left: 190px;
+  line-height: 95px;
+  background: var(--sblue);
+}
+
+.togimg {
+  grid-area: covertog;
+  width: 350px;
+  height: 500px;
+  background-size: 600px;
+  background-position: center;
+  background-image: url(https://raw.githubusercontent.com/vanneeh/imgsCodePen/main/TributePage/tofcover.jpg?token=AL4UVKBNYFS7SEKAXBIVE53BGFGBO);
+}
+
+.togresume {
+  grid-area: tog;
+  background: rgba(241, 241, 241, 0.8);
+}
+
+footer {
+  color: darken($ice, 55%);
+  font-family: Roboto;
+  font-size: 0.9em;
+  width: 800px;
+}

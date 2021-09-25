@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700|Fredericka+the+Great|Open+Sans+Condensed:300');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(/Projetos/01/img/background.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: center;
+}
+
+.containerpanel {
+    justify-content: center;
+    display: flex;
+}
+
+.first-panel {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 960px;
+    min-width: 330px;
+    height: 800px;
+    margin: 10px 0 10px 10px;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.second-panel {
+    background: url(/Projetos/01/img/side-background.jpg) no-repeat 65% 0%;
+    background-color: black;
+    background-size: 120%;
+    width: 320px;
+    height: 800px;
+    margin: 10px 10px 10px 0;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 400;
+    font-size: 7em;
+    margin-top: 5px;
+    color: #F2D13D;
+    text-shadow: 5px 5px #000;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Amatic SC';
+    font-size: 4em;
+    color: #F2D13D;
+    text-shadow: 4px 4px #555;
+    letter-spacing: 2px;
+    word-spacing: 9px;
+    text-align: center;
+    padding-top: -15px;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 24px;
+    color: #f1f1f1;
+    letter-spacing: 1.2px;
+    word-spacing: 1.8px;
+    text-align: center;
+}
+
+form {
+    max-width: 100%;
+    padding: 2% 3% 0% 6%;
+}
+
+input[type='radio'] {
+    margin: 0px 7px 0px 0px;
+}
+
+input[type='checkbox'] {
+    margin: 0px 7px 0px 0px;
+}
+
+label {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    color: #f1f1f1;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style: none;
+}
+
+#textarea {
+    height: 150px;
+}
+
+#age {
+    grid-area: age;
+}
+
+#gender-label,
+#blood-label {
+    margin-left: 20px;
+}
+
+.form-control {
+    border-radius: 4px;
+    height: 35px;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: none;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 30% 20% 98%;
+    grid-template-areas:
+        "age gender-label gender-option"
+        "age blood-label blood-option"
+}
+
+.grid2 {
+    display: grid;
+    grid-template:
+        "ancestry checkboxes"auto /25% auto
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #f1f1f1;
+    width: 50%;
+    height: 35px;
+    margin: 2px;
+}
+
+
+.check-group {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #f1f1f1;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+}
+
+.button {
+    font-family: 'Amatic SC';
+    font-size: 35px;
+    color: #F2D13D;
+    width: 200px;
+    padding: 10px 20px;
+    margin-left: 45px;
+    margin-top: 665px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    border: 3px solid #F2D13D;
+}
