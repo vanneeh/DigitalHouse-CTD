@@ -8,7 +8,7 @@
 
 .background {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('/Projetos/01/img/background.jpg');
+        url('./img/background.jpg');
     background-size: cover;
     background-repeat: repeat;
     background-attachment: scroll;
@@ -31,7 +31,7 @@
 }
 
 .second-panel {
-    background: url('/Projetos/01/img/side-background.jpg') no-repeat 65% 0%;
+    background: url('./img/side-background.jpg') no-repeat 65% 0%;
     background-color: black;
     background-size: 120%;
     width: 320px;
