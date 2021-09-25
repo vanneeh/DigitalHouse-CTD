@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
     <title>Formulário- Checkpoint 2</title>
 </head>
 
@@ -45,7 +46,8 @@
                     <label for=""><input type="checkbox">Residente</label>
                 </div>
                 <label class="title">Escolha um ponto de interesse:</label>
-                <select name="" id="">
+                <select name="local" id="local" onchange="changeMap()">
+                    <option value="0" selected disabled hidden></option>
                     <option value="1">Cristo Redentor</option>
                     <option value="2">Pão de Açúcar</option>
                     <option value="3">Santa Teresa</option>
@@ -61,7 +63,7 @@
         </form>
         <div class="maps">
         <h2 class="hvr-grow-rotate">Venha conhecer!</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235198.7885150827!2d-43.58640913701253!3d-22.91406903476988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio%20de%20Janeiro%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1632531556557!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        <iframe id="mapa" src="" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
     </main>
 </body>
 
