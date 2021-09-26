@@ -250,7 +250,27 @@ iframe {
     margin-top: 15px;
     text-align: center;
 }
-
+#mapa0{
+  display:none;
+}
+#mapa1{
+  display:none;
+}
+#mapa2{
+  display:none;
+}
+#mapa3{
+  display:none;
+}
+#mapa4{
+  display:none;
+}
+#mapa5{
+  display:none;
+}
+#mapa6{
+  display:none;
+}
 
 
 /* Float Shadow */
