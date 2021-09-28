@@ -15,15 +15,18 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("https://www.spriomais.com.br/wp-content/uploads/2020/08/sao-jose-ponte-estaiada-claudio-vieira-pmsjc.jpg");
     background-size: cover;
     background-attachment: fixed;
-    margin: auto;
+    display: flex;
+    justify-content: center;
     padding: 10px;
 }
 
 .container {
     background: linear-gradient(rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 4%, rgba(0, 0, 0, 0.8) 15%, rgba(0, 0, 0, 0.8) 96%, rgba(0, 0, 0, 0) 100%);
-    width: 1000px;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: auto;
-    margin: auto;
 }
 
 header,
@@ -44,10 +47,12 @@ h1 {
 }
 
 h2 {
+    font-size: 40px;
     letter-spacing: 1px;
 }
 
 h3 {
+    font-size: 25px;
     padding-bottom: 10px;
 }
 
@@ -65,7 +70,7 @@ p {
     font-family: 'Roboto', sans-serif;
     color: #dddddd;
     text-align: justify;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
     padding: 10px 8px;
     width: 90%;
@@ -78,7 +83,7 @@ ul {
 
 iframe {
     width: 90%;
-    height: 506px;
+    height: 40vw;
     /* não coloquei a altura especificada nas instruções pois ficaria enorme na página e fora de proporção para a imagem do video */
 }
 
@@ -111,9 +116,70 @@ footer {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
 footer a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 35px;
+    margin: 0 15px;
+}
+
+/*  responsivo  */
+@media(min-width: 769px) and (max-width:1279px){
+    h1{
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    p{
+        font-size: 20px;
+    }
+    footer a{
+        font-size: 25px;
+    }
+}
+
+@media(min-width: 481px) and (max-width: 768px){
+    h1{
+       font-size: 40px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 22px;
+    }
+    p{
+        font-size: 20px;
+    }
+    footer a{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px){
+    h1{
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    p{
+        font-size: 18px;
+    }
+    footer a{
+        font-size: 20px;
+    }
 }
