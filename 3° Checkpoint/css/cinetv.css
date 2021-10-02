@@ -1,5 +1,72 @@
-.card{
-
-    width: 400px;
+.card {
+    height: 30rem;
+    width: 30rem;
     text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
 }
+ 
+.modal-dialog{
+    aspect-ratio: 16/9;
+    width: 80vw;
+    height: fit-content;
+    max-width:1000px;
+}
+
+#atores{
+    flex-direction: row;
+    gap: 1rem;
+    
+}
+.logoSerie{
+    margin: 3rem;
+}
+.serie {
+    font-size: 1.75rem;
+    text-align: justify;
+}
+iframe{
+    margin: 2rem 0;
+}
+/* 
+@media (min-width: 1024px) and (max-width: 1600px) { 
+
+    .card {
+        height: 30rem;
+        width: 25rem;
+        text-align: center;
+        padding: 2rem;
+        font-size: 1.2rem;
+    }
+ }
+@media (min-width: 768px) and (max-width: 1023,99px) { 
+    #atores{
+        flex-direction: column;
+    }
+    .card {
+        height: 30rem;
+        width: 35rem;
+        text-align: center;
+        padding: 2rem;
+        font-size: 1.2rem;
+    }
+ }
+ 
+@media (max-width: 575.98px) { 
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+
+} */
