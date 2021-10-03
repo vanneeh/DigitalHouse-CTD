@@ -3,15 +3,7 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto Slab', serif; 
 */
 
-
-
-
-
-html, body {
-    /* overflow: hidden; */
-  }
-
-  
+ 
 #banner h1 {
     font-family: 'thewitcher';
     font-size: 5rem;
@@ -19,10 +11,11 @@ html, body {
 
 #banner p{
     font-size: 2rem;
+    text-align: center;
 }
 
 #banner {
-    background-image: url('../img/bannerHome.jpg');
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%),url('../img/bannerHome.jpg');
     height: 100vh;/* calc(100vh - 75px); */
     background-attachment: fixed;
 }
@@ -31,6 +24,9 @@ section {
     height: 100vh ;/* calc(100vh - 75px); */
 }
 
+.banner-text{
+    filter: drop-shadow(2px 2px 5px rgb(255, 255, 255));
+}
 .section-one {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.6) 100%), url('../img/background01.jpg');
     background-size: cover;
@@ -38,17 +34,21 @@ section {
     background-position: center;
 }
 
-.article-one {
+.article-one, .article-two {
     width: 60vw;
     height: 70vh;
     backdrop-filter: blur(20px) saturate(90%);
     -webkit-backdrop-filter: blur(20px) saturate(90%);
-    background-color: rgba(137, 171, 202, 0.2);
+    
     border-radius: 1rem;
     border: 1px solid rgba(83, 83, 83, 0.125);
 }
 
-.article-one h2 {
+.article-one{
+ background-color: rgba(137, 171, 202, 0.2);   
+}
+
+.article-one h2, .article-two h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     margin: 2rem 0;
@@ -76,13 +76,7 @@ section {
 
 
 .article-two {
-    width: 60vw;
-    height: 75vh;
-    backdrop-filter: blur(20px) saturate(90%);
-    -webkit-backdrop-filter: blur(20px) saturate(90%);
     background-color: rgba(224, 224, 222, 0.301);
-    border-radius: 12px;
-    border: 1px solid rgba(83, 83, 83, 0.125);
 }
 
 .action{
