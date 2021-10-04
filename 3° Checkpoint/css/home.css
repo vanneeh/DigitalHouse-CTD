@@ -12,12 +12,12 @@
 
 #banner {
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%),url('../img/bannerHome.jpg');
-    height: 100vh;/* calc(100vh - 75px); */
+    height: 100vh;
     background-attachment: fixed;
 }
 
 section {
-    height: 100vh ;/* calc(100vh - 75px); */
+    height: 100vh ;
 }
 
 .banner-text{
@@ -87,6 +87,5 @@ span{
 }
 
 a span{
-    
     display: block;
 }

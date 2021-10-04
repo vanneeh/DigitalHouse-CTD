@@ -25,9 +25,6 @@ body{
     
 }
 
- h1{
-     text-align: center;
- }
 .modal-dialog{
     aspect-ratio: 16/9;
     width: 80vw;
@@ -56,6 +53,7 @@ h1{
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2px;
+    text-align: center;
 }
 
 /* carrossel com as fotos da primeira temporada */
