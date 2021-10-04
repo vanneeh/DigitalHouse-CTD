@@ -1,5 +1,4 @@
 
- 
 #banner h1 {
     font-family: 'thewitcher';
     font-size: 5rem;
@@ -24,13 +23,22 @@ section {
 .banner-text{
     filter: drop-shadow(2px 2px 5px rgb(255, 255, 255));
 }
-.section-one {
+
+span{
+    font-family: 'Roboto Slab', serif; 
+}
+
+.section-one{
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.6) 100%), url('../img/background01.jpg');
+}
+.section-two {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.6) 100%), url('../img/background02.jpg');
+}
+.section-one, .section-two {  
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
-
 .article-one, .article-two {
     width: 60vw;
     height: 70vh;
@@ -42,16 +50,17 @@ section {
 }
 
 .article-one{
- background-color: rgba(137, 171, 202, 0.2);   
+    background-color: rgba(178, 196, 213, 0.5);   
 }
-
+.article-two {
+    background-color: rgba(224, 224, 222, 0.5);
+}
 .article-one h2, .article-two h2 {
-    font-family: 'Roboto Slab', serif; 
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
     font-size: 3rem;
     margin: 2rem 0;
-}
-span{
-    font-family: 'Roboto Slab', serif; 
 }
 
 .article-one p, .article-two p {
@@ -63,19 +72,6 @@ span{
 .article-one h2 span {
     font-family: 'thewitcher';
     font-size: 3rem;
-}
-
-
-.section-two {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.6) 100%), url('../img/background02.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-
-.article-two {
-    background-color: rgba(224, 224, 222, 0.301);
 }
 
 .action{

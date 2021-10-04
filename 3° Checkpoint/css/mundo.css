@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+
+* {
+    text-align: left;
+    
+}
+
+
+#titulo h1 {
+    font-family: 'thewitcher';
+    font-size: 5rem;
+}
+
+#titulo {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(209, 64, 64, 0.3) 100%), url('../img/backgroundmundo1.jpeg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.text {
+    filter: drop-shadow(2px 2px 5px rgb(255, 255, 255));
+}
+
+section {
+    height: 100vh;
+}
+
+h1{
+    text-align: left;
+}
+

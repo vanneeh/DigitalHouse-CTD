@@ -6,7 +6,9 @@ body{
 }
 .container{
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 5rem 3rem;
+    padding: 3rem 3rem;
+    backdrop-filter: blur(5px) saturate(90%);
+    -webkit-backdrop-filter: blur(5px) saturate(90%);
 }
 #hexer{
     width: 20rem;
@@ -15,12 +17,14 @@ body{
 }
 .card {
     height: 30rem;
-    width: 30rem;
+    width: 25rem;
     text-align: center;
-    padding: 2rem;
-    font-size: 1.2rem;
+    padding: 1rem;
+    font-size: 1.1rem;
     background-color: rgba(244, 250, 255, 0.905);
+    
 }
+
  h1{
      text-align: center;
  }
@@ -32,10 +36,13 @@ body{
 }
 .anime{
     width: 90%;
-}
+} 
 #atores{
     flex-direction: row;
     gap: 0.5rem;
+    /* flex-wrap: wrap; */
+    flex-grow: 1;
+    max-width:100%
     
 }
 .logoSerie{
@@ -45,8 +52,40 @@ body{
     font-size: 1.75rem;
     text-align: justify;
 }
+h1{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
 
-
+/* carrossel com as fotos da primeira temporada */
+.carousel {
+    margin-bottom: 4rem;
+    width: calc(100% + 6rem);
+/*     aspect-ratio: 16/9;
+    max-width: calc(100% + 6rem); */
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    aspect-ratio: 16/9;
+    max-width: calc(100% + 6rem);
+    width: calc(100% + 6rem);
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: -5.5rem;
+    min-width: 100%;
+    aspect-ratio: 16/9;
+    max-width: calc(100% + 6rem);
+    width: calc(100% + 6rem);
+  }
 /* @media (min-width: 1024px) and (max-width: 1600px) { 
 
     .card {
@@ -91,4 +130,11 @@ body{
         flex-wrap: wrap;
     }
 
+} 
+@media (min-width: 1200px) and (max-width: 1600px) { 
+    #atores{
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+ 
 } 

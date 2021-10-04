@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+
+body{
+  font-family: 'Manrope', sans-serif;
+}
+
+#livros{
+    display:flex;
+    justify-content: space-between;
+    padding:65px;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.titulo{
+  text-align: center;
+  padding: 15px 0;
+}
+
+main{
+  background-color: rgba(100, 97, 102, 0.842);
+}
+
+.saga{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 78px;
+  max-width: 900px;
+  padding:10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.saga img{
+height: 350px;
+width: 100%;
+object-fit: cover;
+}
+
+.saga img:hover{
+    transform: scale(1.1);
+}
+
+.btn{
+  padding: 10px 90px;
+  font-weight: bold;
+  border-radius: 9px;
+  border: none;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: rgb(41, 60, 95);
+  color: white;
+}

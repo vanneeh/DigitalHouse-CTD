@@ -11,7 +11,7 @@
     <!-- icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- css -->
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/fonts.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
 <!--  falta arrumar os link da nav bar -->
 <body>
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+        <nav class="navbar navbar-expand-xl navbar-light bg-light sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./"><img src="../img/logo-navbar.png" alt="" height="35"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#theWitcher"
@@ -66,8 +66,74 @@
     </header>
     <main>
 
-        xxxxxxxxxxxxxxxx
-        
+        <div class="container" >
+            <a class="links" id="paracadastro"></a>
+            <a class="links" id="paralogin"></a>
+             
+            <div class="content">      
+              <!--FORMULÁRIO DE LOGIN-->
+              <div id="login">
+                <form method="post" action=""> 
+                  <h1>Login</h1> 
+                  <p> 
+                    <label for="nome_login">Seu nome</label>
+                    <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
+                  </p>
+                   
+                  <p> 
+                    <label for="email_login">Seu e-mail</label>
+                    <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+                  </p>
+                   
+                  <p> 
+                    <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+                    <label for="manterlogado">Manter-me logado</label>
+                  </p>
+                   
+                  <p> 
+                    <input type="submit" value="Logar" /> 
+                  </p>
+                   
+                  <p class="link">
+                    Ainda não tem conta?
+                    <a href="#paracadastro">Cadastre-se</a>
+                  </p>
+                </form>
+              </div>
+         
+              <!--FORMULÁRIO DE CADASTRO-->
+              <div id="cadastro">
+                <form method="post" action=""> 
+                  <h1>Cadastro</h1> 
+                   
+                  <p> 
+                    <label for="nome_cad">Seu nome</label>
+                    <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+                  </p>
+                   
+                  <p> 
+                    <label for="email_cad">Seu e-mail</label>
+                    <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+                  </p>
+                   
+                  <p> 
+                    <label for="senha_cad">Sua senha</label>
+                    <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+                  </p>
+                   
+                  <p> 
+                    <input type="submit" value="Cadastrar"/> 
+                  </p>
+                   
+                  <p class="link">  
+                    Já tem conta?
+                    <a href="#paralogin"> Ir para Login </a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>  
+
     </main>
       <!-- Option 1: Bootstrap Bundle with Popper -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
