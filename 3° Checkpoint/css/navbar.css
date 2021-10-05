@@ -1,92 +1,92 @@
 *{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 /*     scroll-padding: 75px; */
 }
 
 .nav-link{
-    font-size: 1.3rem;
-    /* transition: all .2s ease-in-out; */
+  font-size: 1.3rem;
+  /* transition: all .2s ease-in-out; */
 }
 
 .nav-item{
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 nav{
-    height: 41px;
+  height: 41px;
 }
 .active{
-    background-color: #e9ecef;
+  background-color: #d6d9db;
 }
 
 .dropdown-item:active{
-    background-color: #e9ecef;
-    color: #000;
+  background-color: #d6d9db;
+  color: #000;
 }
 
 .nav-link {
-    font-family: 'Roboto Slab', serif; 
-    display: inline-block;
-    vertical-align: middle;
- /*    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0); */
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-  }
-  .nav-link:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #e9ecef;
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  
-  .nav-link:hover:before, .nav-link:focus:before, .nav-link:active:before {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-  }
-  
+  font-family: 'Roboto Slab', serif; 
+  display: inline-block;
+  vertical-align: middle;
+/*    -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0); */
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.nav-link:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #d6d9db;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.nav-link:hover:before, .nav-link:focus:before, .nav-link:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
 
 .footer{
-    background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 
 ::-webkit-scrollbar{
-    width: 10px;
+  width: 10px;
 
 }
 /* Track */
 ::-webkit-scrollbar-track {
-    background: rgb(241, 241, 241); 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(136, 136, 136); 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(199, 195, 195); 
-  }
+  background: rgb(241, 241, 241); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(136, 136, 136); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(199, 195, 195); 
+}

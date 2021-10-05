@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" type="imagem/png" href="../img/favicon.png"/>
+    <link rel="icon" type="imagem/png" href="../img/favicon.png" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> -->
     <!-- css -->
     <link rel="stylesheet" href="../css/sobre.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/fonts.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="topo">Home - The Witcher</title>
+    <title id="topo">Sobre - The Witcher</title>
 </head>
 
 <body>
-    <header id="home" class="sticky-top">
-        <nav class="navbar navbar-expand-xl navbar-light bg-light stic" aria-label="Third navbar example">
-            <div class="container-fluid">
+    <header  class="sticky-top">
+        <nav id="nav1" class="navbar navbar-expand-xl navbar-light bg-light sticky-top">
+            <div id="nav2"class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="../img/logo-navbar.png" alt="" height="35"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#theWitcher"
                     aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,28 +34,33 @@
                             <a class="nav-link" href="../">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./">O Autor</a>
+                            <a class="nav-link" href="../autor/">O Autor</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../livros/">Os Livros</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../mundo/">O Mundo</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown"
+                                aria-expanded="false">O Mundo</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                                <li><a class="dropdown-item" href="../mundo/">Linha do Tempo</a></li>
+                                <li><a class="dropdown-item" href="../mundo/lugares/">Lugares</a></li>
+                                <li><a class="dropdown-item" href="../mundo/personagens/">Personagens</a></li>
+                                <li><a class="dropdown-item" href="../mundo/historia/">História</a></li>
+                                <li><a class="dropdown-item" href="../mundo/magia/">Magia</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
                                 aria-expanded="false">Adaptações</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                                <li><a class="dropdown-item" href="../adaptacoes/hqs/">HQ's</a></li>
+                                <li><a class="dropdown-item" href="../adaptacoes/">HQ's</a></li>
                                 <li><a class="dropdown-item" href="../adaptacoes/jogos/">Jogos</a></li>
                                 <li><a class="dropdown-item" href="../adaptacoes/cinetv/">Cinema e Televisão</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./">Sobre nós</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../produtos/">Produtos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../login/">Login</a>
@@ -64,18 +70,80 @@
             </div>
         </nav>
     </header>
+
     <body>
-
         <main>
+            <section id="banner" class="section-one d-flex flex-column justify-content-center align-items-center">
+                <article class="article-one d-flex flex-column justify-content-start align-items-center">
+                    <div class="text-center">
+                        <h1>conheça o nosso <br><span>suicide</span>squad</h1>
+                    </div>
+                    <div class="squad d-flex flex-row justify-content-between align-items-center">
+                        <div class="person d-flex flex-column justify-content-center align-items-start">
+                            <div class="card card1">
+                                <div class="icons">
+                                    <i class="bi bi-github"><a href="https://github.com/vanneeh"></a></i>
+                                    <i class="bi bi-linkedin"><a href="https://www.linkedin.com/in/vannes-fn/"></a></i>
+                                    <i class="bi bi-envelope-fill"><a href="mailto:vanneeh_@hotmail.com"></a></i>
+                                </div>
+                                <div class="border">
+                                </div>
+                            </div>
+                            <h2>Vanessa Fernandes</h2>
+                        </div>
 
-            TESTANDO TESTANDO TESTANDO TESTANDO
+                        <div class="person d-flex flex-column justify-content-center align-items-start">
+                            <div class="card card2">
+                                <div class="icons">
+                                    <i class="bi bi-github"><a href="https://github.com/Niikapucci"></a></i>
+                                    <i class="bi bi-linkedin"><a
+                                            href="https://www.linkedin.com/in/nikolascapucci/"></a></i>
+                                    <i class="bi bi-envelope-fill"><a href="mailto:nikolas.capucci@yahoo.com"></a></i>
+                                </div>
+                                <div class="border">
 
+                                </div>
+
+                            </div>
+                            <h2>Nikolas Capucci</h2>
+                        </div>
+
+                        <div class="person d-flex flex-column justify-content-center align-items-start">
+                            <div class="card card3">
+                                <div class="icons">
+                                    <i class="bi bi-github"><a href="https://github.com/RosanaBarbosa"></a></i>
+                                    <i class="bi bi-linkedin"><a href="https://www.linkedin.com/in/rosana-barbosa-5b2217202"></a></i>
+                                    <i class="bi bi-envelope-fill"><a href="mailto:rosana.barbosa@brb.com.br"></a></i>
+                                </div>
+                                <div class="border">
+
+                                </div>
+
+                            </div>
+                            <h2>Rosana Barbosa</h2>
+                        </div>
+
+                        <div class="person d-flex flex-column justify-content-center align-items-start">
+                            <div class="card card4">
+                                <div class="icons">
+                                    <i class="bi bi-github"><a href="https://github.com/Melissa732"></a></i>
+                                    <i class="bi bi-linkedin"><a href="https://www.linkedin.com/in/ivy-v%C3%A1squez-5a66706a/"></a></i>
+                                    <i class="bi bi-envelope-fill"><a
+                                            href="mailto:ivy.paredes.vasquez@gmail.com"></a></i>
+                                </div>
+                                <div class="border">
+                                </div>
+                            </div>
+                            <h2>Ivy Paredes Vasquez</h2>
+                        </div>
+                    </div>
+                </article>
+            </section>
         </main>
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-    </script>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
     </body>
     <div class="footer fixed-bottom">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-2  border-top">
@@ -84,9 +152,10 @@
                 <source src="../audio/maintheme.mp3" type="audio/mp3" />
             </audio>
             <div class="col-md-2 d-flex align-items-end">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"> </a>
-            <span class="text-muted">Página criada para fins educacionais.</span>
-          </div>
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"> </a>
+                <span class="text-muted">Página criada para fins educacionais.</span>
+            </div>
         </footer>
-      </div>
-    </html>
+    </div>
+
+</html>
