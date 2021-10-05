@@ -1,62 +1,34 @@
-#banner {
+body {
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url('../img/background03.jpg');
-    height: calc(100vh - 41px);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    backdrop-filter: blur(10px) saturate(90%);
+    -webkit-backdrop-filter: blur(10px) saturate(90%);
 }
-
-#banner p {
-    font-size: 2rem;
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
+/* main{
+    padding: 3rem;
+} */
+.fixed-bottom{
+    position: sticky;
+    bottom:00px;
+}  
+section{
+    height: calc(100vh - 88px);
 }
-
-#banner span {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.3rem;
-}
-
-section {
-    height: 100vh;
-}
-
 h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2px;
-    font-size: 3rem;
-    margin: 2rem 0;
+    font-size: 4rem;
+    margin: 4rem 0;
 }
-
 
 .article-one {
     width: 90vw;
-    height: 80vh;
-    backdrop-filter: blur(10px) saturate(90%);
-    -webkit-backdrop-filter: blur(10px) saturate(90%);
-
-    border-radius: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 2rem 0;
+    height: fit-content;
 }
-
-.action {
-    width: 60vw;
-    margin-top: 2rem;
-}
-
-.action a {
-    text-decoration: none;
-    color: rgb(32, 32, 32);
-    font-size: 25px;
-}
-
-a span {
-    display: block;
-}
-
-
-/*  TEEEEESTEEEEEE  */
 
 .border {
     height: 369px;
@@ -65,21 +37,23 @@ a span {
     border-radius: 10px;
     position: relative;
 }
-.squad{
-    width: 90%;
+
+.squad {
+    width: 100%;
+    height: 120%;
 }
-.person{
-    width: 25rem;
-    ;
+
+.person {
     transition: all 0.2s ease-in-out;
     filter: brightness(50%) grayscale(100%)
 }
-.person:hover{
+
+.person:hover {
     filter: brightness(90%);
 }
 
 .card {
-    height: 379px;
+    height: 380px;
     width: 300px;
     background: grey;
     border-radius: 10px;
@@ -90,45 +64,230 @@ a span {
     align-items: center;
     position: relative;
 }
+
 .card1 {
     background: url('../img/vanessafernandes.jpeg') no-repeat;
     background-position: 0 -20px;
     background-size: 300px;
 }
+
 .card2 {
     background: url('../img/nikolascapucci.jpg') no-repeat;
     background-position: left -20px;
     background-size: 300px;
 }
+
 .card3 {
     background: url('../img/rosanabarbosa.jpeg') no-repeat;
     background-position: 0 -20px;
     background-size: 300px;
 }
+
 .card4 {
     background: url('../img/ivyvasquez.jpeg') no-repeat;
     background-position: 0 -20px;
     background-size: 320px;
 }
+
 h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 2.5rem;
-    color: black;    
+    color: black;
 }
 
 .icons {
     position: absolute;
     fill: #000;
     color: #000;
-    height: 10rem;
-    bottom: 0px;
-    RIGHT:-40px;
-    font-size: 1.5rem;
+    height: 100px;
+    bottom: 10px;
+    right: -40px;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
-i:hover{
+
+i:hover {
     transform: scale(1.5);
+}
+
+
+@media (max-width: 575.98px) {
+    * {
+        font-size: 10px;
+    }
+    body {
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url('../img/background03.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+   
+    h1 {
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+        font-size: 3.5rem;
+        margin: 1rem 0;
+    }
+    section{
+        height: fit-content;
+    }
+    .section-one span{
+        font-size: 2.5rem;
+    }
+    .article-one {
+        width: 80vw;
+        padding: 2rem 2rem;
+    }
+    
+    .squad {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .person{
+        margin:1rem 0;
+        height: 430px;
+    }
+    .icons i{
+        font-size: 30px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    * {
+        font-size: 10px;
+    }
+    body {
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url('../img/background03.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+   
+    h1 {
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+        font-size: 3.5rem;
+        margin: 1rem 0;
+    }
+    section{
+        height: fit-content;
+    }
+    .section-one span{
+        font-size: 2.5rem;
+    }
+    .article-one {
+        width: 80vw;
+        padding: 2rem 2rem;
+    }
+    
+    .squad {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .person{
+        margin:1rem 0;
+        height: 430px;
+    }
+    .icons i{
+        font-size: 30px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    * {
+        font-size: 10px;
+    }
+    body {
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url('../img/background03.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    h1 {
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+        font-size: 3.5rem;
+        margin: 1rem 0;
+    }
+   
+    .section-one span{
+        font-size: 5rem;
+    }
+    .article-one {
+        width: 80vw;
+        padding: 2rem 2rem;
+        
+    }
+    
+    .squad {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .person{
+        margin:1rem 0;
+        height: 430px;
+    }
+    .icons i{
+
+        font-size: 30px;
+    }
+    
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    * {
+        font-size: 10px;
+    }
+    body {
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url('../img/background03.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    main{
+        padding: 3rem;
+    }    
+    
+    h1 {
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+        font-size: 3.5rem;
+        margin: 1rem 0;
+    }
+    .section-one span{
+        font-size: 2.8rem;
+    }
+    .article-one {
+        width: 60vw;
+        padding: 2rem 2rem;  
+    }
+    
+    .squad {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .person{
+        margin:1rem 0;
+        height: 430px;
+    }
+    .icons i{
+
+        font-size: 30px;
+    }
+    
+
 }

@@ -1,61 +1,69 @@
-
-#banner h1 {
-    font-family: 'thewitcher';
-    font-size: 5rem;
-}
-
-#banner p{
+#banner p {
     font-size: 2rem;
     text-align: center;
-    font-family: 'Roboto Slab', serif; 
+    font-family: 'Roboto Slab', serif;
 }
 
 #banner {
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%),url('../img/bannerHome.jpg');
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url('../img/bannerHome.jpg');
     height: 100vh;
-    background-attachment: fixed;
-}
-
-section {
-    height: 100vh ;
-}
-
-.banner-text{
-    filter: drop-shadow(2px 2px 5px rgb(255, 255, 255));
-}
-
-span{
-    font-family: 'Roboto Slab', serif; 
-}
-
-.section-one{
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.6) 100%), url('../img/background01.jpg');
-}
-.section-two {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.6) 100%), url('../img/background02.jpg');
-}
-.section-one, .section-two {  
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
-.article-one, .article-two {
+
+.banner-text img {
+    width: 40rem;
+}
+
+section {
+    height: 100vh;
+}
+
+.banner-text {
+
+    filter: drop-shadow(2px 2px 5px rgb(255, 255, 255));
+}
+
+span {
+    font-family: 'Roboto Slab', serif;
+}
+
+.section-one {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.6) 100%), url('../img/background01.jpg');
+}
+
+.section-two {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.6) 100%), url('../img/background02.jpg');
+}
+
+.section-one,
+.section-two {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.article-one,
+.article-two {
     width: 60vw;
-    height: 70vh;
+    height: fit-content;
     backdrop-filter: blur(20px) saturate(90%);
     -webkit-backdrop-filter: blur(20px) saturate(90%);
-    
     border-radius: 1rem;
     border: 1px solid rgba(83, 83, 83, 0.125);
 }
 
-.article-one{
-    background-color: rgba(178, 196, 213, 0.5);   
+.article-one {
+    background-color: rgba(178, 196, 213, 0.5);
 }
+
 .article-two {
     background-color: rgba(224, 224, 222, 0.5);
 }
-.article-one h2, .article-two h2 {
+
+.article-one h2,
+.article-two h2 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2px;
@@ -63,28 +71,210 @@ span{
     margin: 2rem 0;
 }
 
-.article-one p, .article-two p {
+.article-one p,
+.article-two p {
     font-size: 1.75rem;
     text-align: justify;
-    padding: 1.8rem;
+    padding: 0 1.8rem;
 }
 
-.article-one h2 span {
-    font-family: 'thewitcher';
-    font-size: 3rem;
-}
 
-.action{
+.action {
     width: 60vw;
-    margin-top:2rem;
+    margin-top: 2rem;
 }
 
-.action a{
+.action a {
     text-decoration: none;
-    color:rgb(32, 32, 32);
-    font-size: 25px;
+    color: rgb(32, 32, 32);
 }
 
-a span{
+a span,
+a i {
     display: block;
+    font-size: 2rem;
+}
+
+
+@media (max-width: 575.98px) {
+    * {
+        font-size: 8px;
+        font-weight: 600;
+        scroll-padding: 41px;
+    }
+
+    .banner-text img {
+        width: 28rem;
+    }
+
+    #banner {
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url('../img/bannerHome.jpg');
+        background-position: -70px center;
+        background-size:cover;
+    }
+
+    #banner p {
+        font-size: 1.5rem;
+    }
+
+    section {
+        height: calc(100vh - 41px);
+    }
+
+    .article-one h2,
+    .article-two h2 {
+        letter-spacing: 0.2px;
+        font-size: 2.5rem;
+        margin-top: 6rem;
+        text-align: center;
+    }
+
+    .article-one p,
+    .article-two p {
+        font-size: 1rem;
+    }
+
+    .article-one,
+    .article-two {
+        width: 90vw;
+        height: 60vh;
+        overflow-y: scroll;
+    }
+
+    .action {
+        flex-direction: row;
+        margin-top: 0.5rem;
+    }
+
+    a span,
+    a i {
+        display: inline-flex;
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    * {
+        font-size: 8px;
+        font-weight: 600;
+        scroll-padding: 41px;
+    }
+
+    .banner-text img {
+        width: 28rem;
+    }
+
+    #banner {
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url('../img/bannerHome.jpg');
+        background-position: -70px center;
+        background-size: 115%;
+    }
+
+    #banner p {
+        font-size: 1.5rem;
+    }
+
+    section {
+        height: calc(100vh - 41px);
+    }
+
+    .article-one h2,
+    .article-two h2 {
+        letter-spacing: 0.2px;
+        font-size: 2.5rem;
+        margin-top: 6rem;
+    }
+
+    .article-one p,
+    .article-two p {
+        font-size: 1rem;
+    }
+
+    .article-one,
+    .article-two {
+        width: 90vw;
+        height: 60vh;
+        overflow-y: scroll;
+    }
+
+    .action {
+        flex-direction: row;
+        margin-top: 0.5rem;
+    }
+
+    a span,
+    a i {
+        display: inline-flex;
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    * {
+        font-size: 8px;
+        font-weight: 600;
+    }
+
+    .banner-text img {
+        width: 30rem;
+    }
+
+    #banner {
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url('../img/bannerHome.jpg');
+        background-position: -80px center;
+        background-size: cover;
+    }
+
+    .article-one p,
+    .article-two p {
+        font-size: 1.3rem;
+    }
+
+    .article-one,
+    .article-two {
+        width: 85vw;
+        height: fit-content;
+
+    }
+
+    a span,
+    a i {
+        display: block;
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    * {
+        font-size: 10px;
+    }
+
+    .banner-text img {
+        width: 30rem;
+    }
+
+    #banner {
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%), url('../img/bannerHome.jpg');
+        background-size: auto;
+        background-position: 10% 25%;
+    }
+
+    .article-one p,
+    .article-two p {
+        font-size: 1.3rem;
+    }
+
+    .article-one,
+    .article-two {
+        width: 85vw;
+        height: fit-content;
+    }
+
+    a span,
+    a i {
+        display: block;
+        font-size: 1.7rem;
+    }
+
 }

@@ -25,7 +25,11 @@
 }
 
 .box {
-    display:flex;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
 }
 
 section {
