@@ -28,6 +28,12 @@
     display:flex;
 }
 
+#linhatempo {
+    padding: 50px;
+    margin: 50px;
+    text-align: justify;
+}
+
 section {
     height: 100vh;
 }

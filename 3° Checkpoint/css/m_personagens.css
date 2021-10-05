@@ -24,6 +24,15 @@
     filter: drop-shadow(2px 2px 5px rgb(255, 255, 255));
 }
 
+#aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+}
+
 .box {
     display: flex;
     align-items: flex-start;
