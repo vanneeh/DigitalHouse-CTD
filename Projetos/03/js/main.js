@@ -78,19 +78,21 @@ function charge() {
     let media = soma / 3;
     console.log(media.toFixed(2));
     let nMin = cursos[myInst].notaMin;
-    let aviso = 'Você está de recuperação em ';
+    let greets = ['Hei,  ', 'Olá ', 'E aí, ', 'Bem-vindo(a), ', ];
+    let feeling = ['Como vai?', 'Como você está?']
+    let stName = document.getElementById('name').value;
+    let aviso = (greets[Math.floor(Math.random() * greets.length)]) + stName +'! '+(feeling[Math.floor(Math.random() * feeling.length)])+' Você ficou de recuperação em ';
     if (media >= nMin) {
-        alert('Parabéns! Sua média foi de ' + media.toFixed(2) + ', então você foi aprovado.')
+        alert((greets[Math.floor(Math.random() * greets.length)]) + stName +'! '+(feeling[Math.floor(Math.random() * feeling.length)])+ ' Parabéns! Sua média foi de ' + media.toFixed(2) + ', você foi aprovado(a).')
     } else if (media < nMin) {
-        if (n1<nMin && n2<nMin && n3<nMin){
-            alert('Desculpe, você não foi aprovado pois não atingiu a média em nenhuma matéria')
+        if (n1 < nMin && n2 < nMin && n3 < nMin) {
+            alert('Desculpe, ' + stName + ', você não foi aprovado(a) pois não atingiu a média em nenhuma matéria.')
         } else if (n1 < nMin) {
             aviso += mat1;
             if (n2 < nMin) {
                 aviso += ' e ' + mat2;
                 if (n3 < nMin) {
                     aviso += ' e ' + mat3;
-
                 }
             } else if (n3 < nMin) {
                 aviso += ' e ' + mat3;
@@ -107,6 +109,5 @@ function charge() {
             aviso += mat3;
             alert(aviso);
         }
-        
     }
 }
