@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(136, 175, 175, 0.8);
+}
+.container.base{
+    height: 100vh;
+}
+input, label{
+ display: block;
+}
+
+label{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+}
+legend{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+h1, h2, legend{
+    font-family: 'Architects Daughter', cursive;
+}
+input, select{
+    border-style: none;
+    border-radius: 8px;
+    width: 80vw;
+    height: fit-content;
+    padding-left: 0.5rem;
+
+}
+
+#mats{
+    display: none;
+}
+
+button{
+    border-style: none;
+    width: 5rem;
+    height: 3rem;
+    border-radius: 4rem;
+    background-color: rgba(136, 175, 175, 0.8);
+    transition: all .2s ease-in-out;
+&:hover{
+    background-color: rgb(95, 145, 145);
+    transform: scale(1.1);
+}
+}
+.grid{
+    display: grid;
+    grid-template-columns: 15rem auto;
+    grid-template-rows: auto;
+    gap: 1rem;
+    grid-template-areas: 
+    'mat1 n1'
+    'mat2 n2'
+    'mat3 n3';
+}
+#mat1{
+    grid-area: mat1;
+}
+#mat2{
+    grid-area: mat2;
+}
+#mat3{
+    grid-area: mat3;
+}
+#nota1{
+    grid-area: n1;
+    width: 4rem;
+}
+#nota2{
+    grid-area: n2;
+    width: 4rem;
+}
+#nota3{
+    grid-area: n3;
+    width: 4rem;
+}

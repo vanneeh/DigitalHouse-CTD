@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(136, 175, 175, 0.8);
+}
+
+.container.base {
+  height: 100vh;
+}
+
+input, label {
+  display: block;
+}
+
+label {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+
+legend {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+h1, h2, legend {
+  font-family: 'Architects Daughter', cursive;
+}
+
+input, select {
+  border-style: none;
+  border-radius: 8px;
+  width: 80vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-left: 0.5rem;
+}
+
+#mats {
+  display: none;
+}
+
+button {
+  border-style: none;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 4rem;
+  background-color: rgba(136, 175, 175, 0.8);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+button:hover {
+  background-color: #5f9191;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15rem auto;
+      grid-template-columns: 15rem auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 1rem;
+      grid-template-areas: 'mat1 n1' 'mat2 n2' 'mat3 n3';
+}
+
+#mat1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: mat1;
+}
+
+#mat2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: mat2;
+}
+
+#mat3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: mat3;
+}
+
+#nota1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: n1;
+  width: 4rem;
+}
+
+#nota2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: n2;
+  width: 4rem;
+}
+
+#nota3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: n3;
+  width: 4rem;
+}
+/*# sourceMappingURL=style.css.map */
